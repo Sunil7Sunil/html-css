@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+        .header {
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(5,0,136,0.5),rgba(5,0,136,0.5)),url(ggg.jpg);
+            background-position: center;
+            background-size: cover;
+            overflow-x: hidden;
+        }
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 30px;
+            transition: 1s;
+        }
+        nav .logo {
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            font-weight: 600;
+            color: #fff;
+        }
+        nav .logo img {
+            width: 40px;
+            margin-right: 10px;
+        }
+        nav ul li {
+           display: inline-block;
+           list-style: none;
+           margin: 5px 10px; 
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+        }
+        nav:hover {
+            background: #fff;
+        }
+        nav:hover .logo {
+            color: black;
+           
+        }
+        nav:hover ul li a {
+            color: black;
+        }
+        .content {
+            margin-top: 80px;
+            margin-left: 80px;
+            color: #fff;
+        }
+        .content h1 {
+            font-size: 70px;
+            line-height: 80px;
+            font-weight: 600;
+        }
+        .content p {
+            max-width: 700px;
+            line-height: 20px;
+            opacity: 0;
+        }
+        .links {
+            margin-top: 30px;
+            opacity: 0;
+        }
+        .links a {
+            color: black;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn {
+            border: 2px solid #fff;
+            padding: 5px 20px;
+            border-radius: 20px;
+            margin-right: 10px;
+        }
+        .btp {
+            border: 2px solid #fff;
+            background-color: #fff;
+            padding: 5px 20px;
+            border-radius: 20px;
+            margin-right: 10px;
+        }
+        .slid-left {
+            animation: slidleft 1s linear forwards;
+        }
+        @keyframes slidleft {
+            0%{
+                transform: translate(100px);
+                opacity: 0;
+            }
+            100%{
+                transform: translate(0px);
+                opacity: 1;
+            }
+        }
+        p.slid-left {
+            animation-delay: 1s;
+        }
+        .links.slid-left {
+            animation-delay: 2s; 
+        } 
+       
+        .boxc {
+            height: 10px;
+            width: 100px;
+        }
+        .boxb {
+            height: 10px;
+            width: 20px;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="header">
+        <nav>
+            <div class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpVOKQAxFQfoTAdoyMJim9fvrbAarlRKPZjA&usqp=CAU">&nbsp;
+                <span>ANIMATION.</span>
+            </div>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">WHATSAPP</a></li>
+                <li><a href="#">FACEBOOK</a></li>
+                <li><a href="#">YOUTUBE</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h1 class="slid-left">My <br> Future</h1>
+            <p class="slid-left">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                 Minima impedit alias blanditiis molestias tenetur corrupti sit. Iure ratione,
+                  enim placeat porro dolores dolorum perspiciatis illo assumenda aspernatur itaque facilis sunt.</p>
+            <div class="links slid-left">
+                <a href="#" class="btn">Learn More</a>
+                <a href="#" class="btp">OR CONTACT</a>
+            </div>
+        </div>
+     </div>
+</body>
+</html>
